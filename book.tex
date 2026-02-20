@@ -19,8 +19,9 @@
 \raggedbottom
 \makeindex
 \date{\today}
-
-\newcommand{\BookTitle}{Title - Template book }
+\newcommand{\BookTitle}{Title}
+\newcommand{\BookSubtitle}{SubTitle}
+\newcommand{\BookDescription}{Description}
 \newcommand{\BookAuthor}{TITOR-OOPART}
 \hypersetup{
     pdftitle={\BookTitle},
@@ -67,7 +68,7 @@
 
 \usepackage{caption}
 \captionsetup[table]{name=Tabla}
-\renewcommand*{\lstlistingname}{Exemplo de código}
+\renewcommand*{\lstlistingname}{Ejemplo de código}
 \renewcommand{\listfigurename}{Figuras}
 \renewcommand{\listtablename}{Tablas}
 
@@ -91,12 +92,12 @@ url=true
 \captionsetup[figure]{labelformat=simple,justification=centerlast}
 
 \begin{document}
-	\include{chapters/cover}
-	\thispagestyle{empty}
-	\tableofcontents
-	\listoffigures
-	\listoftables
-	\lstlistoflistings
-	\include{chapters/chapter_01}
-	\printbibliography[heading=bibintoc]
+\include{chapters/cover}
+\thispagestyle{empty}
+\tableofcontents
+\listoffigures
+\listoftables
+\lstlistoflistings
+\include{chapters/chapter_01}
+\printbibliography[heading=bibintoc]
 \end{document}
